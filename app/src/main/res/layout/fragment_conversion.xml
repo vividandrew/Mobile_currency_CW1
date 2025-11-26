@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment_conversion" >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert -"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category" />
+
+        <EditText
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@null"
+            android:inputType="numberDecimal"
+            android:text="Category" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblForeign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Foreign" />
+
+        <EditText
+            android:id="@+id/txtForeign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@null"
+            android:inputType="numberDecimal"
+            android:text="Foreign" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblConversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert from -> Convert To"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Categoryflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50sp"
+            android:paddingRight="50sp"
+            android:text=" --------> " />
+
+        <ImageView
+            android:id="@+id/ForeignFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+</LinearLayout>
